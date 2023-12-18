@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Vue de formulaire -->
+        <record id="view_mon_module_form" model="ir.ui.view">
+            <field name="name">Nom et Prénom</field>
+            <field name="model">Adresse Postale</field>
+            <field name="arch" type="xml">
+                <form>
+                    <script type="text/javascript" src="/mon_module/static/src/js/mon_script.js"/>
+                    <!-- Le reste du vue ici -->
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="date_creation"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
+
